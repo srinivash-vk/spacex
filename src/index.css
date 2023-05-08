@@ -22,10 +22,10 @@ body{
   will-change: transform;
 }
 
-.lol{
+.circle-container{
   width: 600px;
   height: 600px;
-  border: 2px solid white;
+  border: 5px solid white;
   position: absolute;
   margin: auto;
   top: 0;

@@ -9,7 +9,7 @@ export default function LandingPage() {
         className="h-[90.2vh] object-cover w-full"
         src={require("../Assets/landing.jpeg")}
       />
-      <div className="lol">
+      <div className="circle-container">
         <>
           <div className="circle-text">
             <div className="font-extrabold text-7xl">
