@@ -6,7 +6,7 @@ export default function LandingPage() {
   return (
     <div className="text-white flex flex-col m-auto justify-center items-center">
       <ImageComp
-        className="h-[89.9vh] object-cover w-full"
+        className="h-[90.2vh] object-cover w-full"
         src={require("../Assets/landing.jpeg")}
       />
       <div className="lol">
