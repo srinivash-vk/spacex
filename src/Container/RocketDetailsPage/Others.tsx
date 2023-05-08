@@ -12,12 +12,12 @@ export default function Others(props: _OthersProps) {
       {" "}
       <li className="">
         <div className="flex-start flex items-center pt-3">
-          <div className="-ml-[20px] mr-3 h-10 w-10 rounded-full bg-white justify-center items-center p-3">
+          <div className="md:-ml-[20px] mr-3 h-10 w-10 rounded-full bg-white justify-center items-center p-3">
             <ROCKETICON className="h-4 w-4 image" />
           </div>
           <div className="font-thin text-xl">OTHERS</div>
         </div>
-        <div className="p-4 ml-8 max-w-md rounded-md bg-white transition-all hover:scale-110 duration-500 text-black">
+        <div className="p-4 md:ml-8 md:w-full xs:mt-4 xs:w-[23.3rem] rounded-md bg-white transition-all hover:scale-110 duration-500 text-black">
           <div className="grid grid-cols-2">
             <div className="flex flex-col gap-y-3">
               <div>Booster</div>

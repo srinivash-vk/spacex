@@ -20,10 +20,10 @@ export default function RocketDetailsPage() {
   }
 
   return (
-    <div className="h-full w-full mx-auto overflow-x-hidden justify-center px-20 text-white bg-black pb-8">
-      <div className="grid lg:grid-cols-2 md:grid-cols-1 h-full w-full overflow-hidden">
-        <div className="flex md:flex-row sm:flex-col sm:items-center justify-around md:items-start">
-          <ol className="border-l border-white" start={2}>
+    <div className="h-full w-full mx-auto overflow-x-hidden justify-center md:px-20 xs:px-5 text-white bg-black pb-8">
+      <div className="grid lg:grid-cols-2 xs:grid-cols-1 h-full md:w-full overflow-hidden">
+        <div className="flex md:flex-row xs:flex-col sm:items-center md:justify-around md:items-start">
+          <ol className="md:border-l md:border-white">
             <OverView rocketDetails={rocketDetails} />
             <FirstStage rocketDetails={rocketDetails} />
             <SecondStage rocketDetails={rocketDetails} />

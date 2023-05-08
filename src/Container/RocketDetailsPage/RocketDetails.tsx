@@ -16,9 +16,9 @@ export default function RocketDetails(props: _RocketDetailsProps) {
       <div className="flex flex-col justify-center gap-y-6 mx-8">
         <div className="font-thin text-2xl">{rocketDetails?.first_flight}</div>
         <div className="font-medium text-6xl">{rocketDetails?.name}</div>
-        <div className="flex md:flex-row md:gap-x-4 sm:flex-col sm:gap-y-4">
+        <div className="flex md:flex-row md:gap-x-4 xs:flex-col xs:gap-y-4">
           {rocketDetails?.payload_weights.map((payloadName) => (
-            <div className="flex flex-row gap-x-4 rounded-full justify-center items-center md:px-4 md:py-2 sm:px-2 sm:py-2 bg-white text-black">
+            <div className="flex flex-row gap-x-4 rounded-full justify-center items-center md:px-4 md:py-2 xs:px-4 xs:py-4 bg-white text-black">
               <div>🚀</div>
               <div className="">{payloadName.name}</div>
             </div>
