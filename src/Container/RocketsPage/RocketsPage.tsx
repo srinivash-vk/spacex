@@ -1,7 +1,6 @@
 import { useRocketsHook } from "../../Hooks/RocketsHook";
 import RocketCard from "./RocketCard";
 import Loading from "../../Components/Loading";
-import { useRef } from "react";
 import ImageComp from "../../Components/Image";
 import { ReactComponent as DOWNARROW } from "../../Assets/Icons/down_arrow.svg";
 
@@ -9,7 +8,6 @@ function RocketsPage() {
   const { allRocketArray, isAllRocketLoading } = useRocketsHook({
     id: undefined,
   });
-  const firstItemRef = useRef<any>(null);
 
   if (isAllRocketLoading) {
     return <Loading />;
@@ -26,14 +24,7 @@ function RocketsPage() {
           Rockets
         </div>
         <div className="absolute -inset-10 h-[90vh] flex justify-center items-end animate-pulse cursor-pointer">
-          <DOWNARROW
-            onClick={() =>
-              firstItemRef?.current?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              })
-            }
-          />
+          <DOWNARROW />
         </div>
       </div>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-x-4 px-10 mt-10">

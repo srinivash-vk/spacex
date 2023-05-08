@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import { useHistoryHook } from "../../Hooks/HistoryHook";
 import ImageComp from "../../Components/Image";
 import { HistoryModel } from "../../Model/history.model";
@@ -8,7 +7,6 @@ import HistoryCard from "./HistoryCard";
 
 export default function HistoryPage() {
   const { getAllHistory, isGetAllHistoryLoading } = useHistoryHook();
-  const firstItemRef = useRef<any>(null);
 
   if (isGetAllHistoryLoading) {
     return <Loading />;
@@ -16,7 +14,6 @@ export default function HistoryPage() {
 
   return (
     <div
-      ref={firstItemRef}
       className="w-full text-white overflow-x-hidden "
     >
       <div className="relative ">
@@ -28,14 +25,7 @@ export default function HistoryPage() {
           History
         </div>
         <div className="absolute -inset-10 h-[90vh] flex justify-center items-end animate-pulse cursor-pointer">
-          <DOWNARROW
-            onClick={() =>
-              firstItemRef?.current?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              })
-            }
-          />
+          <DOWNARROW/>
         </div>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-full h-full gap-y-4 gap-x-4 md:px-20 xs:px-5 mt-10">
