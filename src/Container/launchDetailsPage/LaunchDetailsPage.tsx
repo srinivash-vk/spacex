@@ -37,7 +37,7 @@ export default function LaunchDetailsPage() {
   }
 
   return (
-    <div className="h-full w-full mx-auto overflow-x-hidden justify-center px-20 text-white bg-black pb-8">
+    <div className="h-full w-full mx-auto overflow-x-hidden justify-center md:px-20 xs:px-5 text-white bg-black pb-8">
       <div className="flex flex-col gap-y-6">
         <iframe
           className={`aspect-video w-full h-[35rem]`}
@@ -52,7 +52,7 @@ export default function LaunchDetailsPage() {
         </div>
         <div className="text-4xl font-semibold">{launchesDetails.name}</div>
         <div className="text-base font-light">{launchesDetails.details}</div>
-        <div className="flex md:flex-row sm:flex-col gap-x-4">
+        <div className="flex md:flex-row xs:flex-col md:gap-x-4 xs:gap-y-4">
           <Button
             name="Reddit here..."
             onClick={() => openInNewTab(launchesDetails.links.reddit.launch)}

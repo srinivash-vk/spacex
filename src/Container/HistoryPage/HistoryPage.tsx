@@ -17,7 +17,7 @@ export default function HistoryPage() {
   return (
     <div
       ref={firstItemRef}
-      className="w-full text-white overflow-x-hidden snap-mandatory snap-y"
+      className="w-full text-white overflow-x-hidden "
     >
       <div className="relative ">
         <ImageComp
@@ -35,11 +35,10 @@ export default function HistoryPage() {
                 block: "start",
               })
             }
-            className="snap-mandatory snap-y"
           />
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-full h-full gap-y-4 gap-x-4 px-10 mt-10 snap-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-full h-full gap-y-4 gap-x-4 md:px-20 xs:px-5 mt-10">
         {getAllHistory?.map((HistoryData: HistoryModel, index: number) => (
           <HistoryCard key={index} history={HistoryData} />
         ))}
