@@ -24,7 +24,7 @@ function RocketCard({ rocket }: { rocket: RocketModel }) {
         {new Date(rocket.first_flight).toDateString()}
       </div>
       <div className="font-thin line-clamp-1 text-md">{rocket.description}</div>
-      <div className="flex flex-row gap-x-10 items-center">
+      <div className="flex md:flex-row md:gap-x-10 xs:flex-col xs:gap-y-4 items-center">
         <Button
           name="Explore here..."
           onClick={() => {
