@@ -13,7 +13,7 @@ export default function RocketDetails(props: _RocketDetailsProps) {
 
   return (
     <>
-      <div className="flex flex-col justify-center gap-y-6 mx-8">
+      <div className="flex flex-col justify-center gap-y-6 md:mx-8 mx-5">
         <div className="font-thin text-2xl">{rocketDetails?.first_flight}</div>
         <div className="font-medium text-6xl">{rocketDetails?.name}</div>
         <div className="flex md:flex-row md:gap-x-4 xs:flex-col xs:gap-y-4">

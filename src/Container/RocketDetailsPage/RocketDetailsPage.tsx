@@ -22,7 +22,7 @@ export default function RocketDetailsPage() {
   return (
     <div className="h-full w-full mx-auto overflow-x-hidden justify-center md:px-20 xs:px-5 text-white bg-black pb-8">
       <div className="grid lg:grid-cols-2 xs:grid-cols-1 h-full md:w-full overflow-hidden">
-        <div className="flex md:flex-row xs:flex-col sm:items-center md:justify-around md:items-start">
+        <div className="flex md:flex-row xs:flex-col order-last md:order-none sm:items-center md:justify-around md:items-start">
           <ol className="md:border-l md:border-white">
             <OverView rocketDetails={rocketDetails} />
             <FirstStage rocketDetails={rocketDetails} />
@@ -39,7 +39,7 @@ export default function RocketDetailsPage() {
           <>
             <div className="h-4" />
             <div
-              className={`grid md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-x-4 gap-y-5 w-full px-8`}
+              className={`grid md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 md:gap-x-4 gap-y-5 w-full px-5 md:px-8`}
             >
               {rocketDetails.flickr_images.map((image, index) => {
                 return (
