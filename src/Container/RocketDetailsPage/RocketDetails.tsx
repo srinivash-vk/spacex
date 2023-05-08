@@ -26,11 +26,11 @@ export default function RocketDetails(props: _RocketDetailsProps) {
         </div>
         <div className="flex flex-row gap-x-4">
           <div>Company :</div>
-          <div>{rocketDetails.company}</div>
+          <div className="font-semibold">{rocketDetails.company}</div>
         </div>
         <div className="flex flex-row gap-x-4">
           <div>Country :</div>
-          <div>{rocketDetails.country}</div>
+          <div className="font-semibold">{rocketDetails.country}</div>
         </div>
         <div>{rocketDetails.description}</div>
         <div className="flex md:flex-row sm:flex-col md:items-center sm:items-start gap-8">
