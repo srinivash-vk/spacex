@@ -22,13 +22,13 @@ To run this project:
 
 ![Screenshot 2023-05-08 at 4 46 28 PM](https://user-images.githubusercontent.com/67652658/236810229-2cbaa49f-3712-439e-b8fc-dfcee1c545ab.png)
 
-#History page
+# History page
 
 ![Screenshot 2023-05-08 at 4 47 08 PM](https://user-images.githubusercontent.com/67652658/236810341-65f26d34-d9ab-417d-811e-ebccfb17eb12.png)
 
 ![Screenshot 2023-05-08 at 4 47 35 PM](https://user-images.githubusercontent.com/67652658/236810414-db032857-5f26-45b8-b768-21e15c23e901.png)
 
-#Rockets page
+# Rockets page
 
 ![Screenshot 2023-05-08 at 4 47 48 PM](https://user-images.githubusercontent.com/67652658/236810450-22a5b1d4-1e54-4f1a-941f-423e169f9e66.png)
 
