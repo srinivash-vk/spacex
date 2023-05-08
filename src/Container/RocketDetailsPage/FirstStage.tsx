@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as ROCKETICON } from "../../Assets/rocket.svg";
+import { ReactComponent as ROCKETICON } from "../../Assets/Icons/rocket.svg";
 import { RocketModel } from "../../Model/rockets.model";
 
 interface _FirstStageProps {

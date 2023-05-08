@@ -3,7 +3,7 @@ import RocketCard from "./RocketCard";
 import Loading from "../../Components/Loading";
 import { useRef } from "react";
 import ImageComp from "../../Components/Image";
-import { ReactComponent as DOWNARROW } from "../../Assets/down_arrow.svg";
+import { ReactComponent as DOWNARROW } from "../../Assets/Icons/down_arrow.svg";
 
 function RocketsPage() {
   const { allRocketArray, isAllRocketLoading } = useRocketsHook({
@@ -20,7 +20,7 @@ function RocketsPage() {
       <div className="relative">
         <ImageComp
           className="h-[90vh] w-full"
-          src={require("../../Assets/rockets_bg.jpeg")}
+          src={require("../../Assets/Images/rockets_bg.jpeg")}
         />
         <div className="absolute text-6xl font-semibold animate-pulse inset-2 h-screen flex justify-center items-baseline">
           Rockets

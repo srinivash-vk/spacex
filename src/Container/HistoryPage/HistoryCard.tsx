@@ -1,6 +1,6 @@
 import { HistoryModel } from "../../Model/history.model";
-import { ReactComponent as CALENDER } from "../../Assets/calender.svg";
-import { ReactComponent as NAIVGATE_ARROW } from "../../Assets/navigate_arrow.svg";
+import { ReactComponent as CALENDER } from "../../Assets/Icons/calender.svg";
+import { ReactComponent as NAIVGATE_ARROW } from "../../Assets/Icons/navigate_arrow.svg";
 
 interface _HistoryCardProps {
   history: HistoryModel;

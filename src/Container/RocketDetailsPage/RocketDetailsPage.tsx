@@ -30,7 +30,7 @@ export default function RocketDetailsPage() {
             <Others rocketDetails={rocketDetails} />
           </ol>
           <ImageComp
-            src={require("../../Assets/rocket.png")}
+            src={require("../../Assets/Images/rocket.png")}
             className="h-full object-cover image"
           />
         </div>

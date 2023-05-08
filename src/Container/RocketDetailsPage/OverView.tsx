@@ -1,6 +1,6 @@
 import React from "react";
 import { RocketModel } from "../../Model/rockets.model";
-import { ReactComponent as ROCKETICON } from "../../Assets/rocket.svg";
+import { ReactComponent as ROCKETICON } from "../../Assets/Icons/rocket.svg";
 
 interface _OverViewProps {
   rocketDetails: RocketModel;

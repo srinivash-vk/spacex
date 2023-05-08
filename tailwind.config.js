@@ -44,7 +44,7 @@ module.exports = {
         raise:{
           // transform: rotate(360deg);
           // '0%,50%':{transform:'rotate(360deg)'},
-          '0%,30%':{transform:'translateY(30rem)'},
+          '0%,30%':{transform:'translateY(0rem)'},
           '40%':{transform:'translateY(40rem)'},
           '100%':{transform:'translateY(100%)'},
           // '100%':{transform:' rotate(0deg)'},

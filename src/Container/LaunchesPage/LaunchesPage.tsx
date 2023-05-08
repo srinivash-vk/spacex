@@ -3,7 +3,7 @@ import { LaunchModel } from "../../Model/launches.model";
 import LaunchCard from "./LaunchCard";
 import Loading from "../../Components/Loading";
 import ImageComp from "../../Components/Image";
-import { ReactComponent as DOWNARROW } from "../../Assets/down_arrow.svg";
+import { ReactComponent as DOWNARROW } from "../../Assets/Icons/down_arrow.svg";
 import { useRef } from "react";
 
 export default function LaunchesPage() {
@@ -21,7 +21,7 @@ export default function LaunchesPage() {
       <div className="relative">
         <ImageComp
           className="h-[90vh] w-full"
-          src={require("../../Assets/launches_bg.jpeg")}
+          src={require("../../Assets/Images/launches_bg.jpeg")}
         />
         <div className="absolute text-6xl font-semibold animate-pulse inset-0 h-screen flex justify-center items-baseline">
           Launches

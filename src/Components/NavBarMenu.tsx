@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { ReactComponent as SpaceX } from "../Assets/spacex.svg";
+import { ReactComponent as SpaceX } from "../Assets/Icons/spacex.svg";
 
 export default function NavBarMenu() {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import { ReactComponent as Rocket } from "../Assets/rocket.svg";
+import { ReactComponent as Rocket } from "../Assets/Icons/rocket.svg";
 
 export default function Loading() {
   return (

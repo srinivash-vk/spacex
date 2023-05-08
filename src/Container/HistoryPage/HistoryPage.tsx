@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useHistoryHook } from "../../Hooks/HistoryHook";
 import ImageComp from "../../Components/Image";
 import { HistoryModel } from "../../Model/history.model";
-import { ReactComponent as DOWNARROW } from "../../Assets/down_arrow.svg";
+import { ReactComponent as DOWNARROW } from "../../Assets/Icons/down_arrow.svg";
 import Loading from "../../Components/Loading";
 import HistoryCard from "./HistoryCard";
 
@@ -22,7 +22,7 @@ export default function HistoryPage() {
       <div className="relative ">
         <ImageComp
           className="h-[90vh] w-full"
-          src={require("../../Assets/history_bg.jpeg")}
+          src={require("../../Assets/Images/history_bg.jpeg")}
         />
         <div className="absolute text-6xl font-semibold animate-pulse inset-0 h-screen flex justify-center items-baseline">
           History
