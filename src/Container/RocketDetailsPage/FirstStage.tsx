@@ -27,17 +27,17 @@ export default function FirstStage(props: _FirstStageProps) {
               <div>Thrust sea level</div>
             </div>
             <div className="flex flex-col gap-y-3">
-              <div>{rocketDetails?.first_stage.engines}</div>
+              <div>{rocketDetails?.first_stage.engines??'~'}</div>
               <div>{rocketDetails?.first_stage.burn_time_sec ?? "~"}/sec</div>
-              <div>{rocketDetails?.first_stage.fuel_amount_tons}/tons</div>
+              <div>{rocketDetails?.first_stage.fuel_amount_tons?? "~"}/tons</div>
               {rocketDetails?.first_stage.reusable ? (
                 <div>Yes</div>
               ) : (
                 <div>No</div>
               )}
               <div>
-                {rocketDetails?.first_stage.thrust_sea_level.kN}/kn{" "}
-                {rocketDetails?.first_stage.thrust_sea_level.lbf}/lbf
+                {rocketDetails?.first_stage.thrust_sea_level.kN ?? "~"}/kn{" "}
+                {rocketDetails?.first_stage.thrust_sea_level.lbf ?? "~"}/lbf
               </div>
             </div>
           </div>

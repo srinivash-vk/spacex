@@ -27,18 +27,18 @@ export default function OverView(props: _OverViewProps) {
             </div>
             <div className="flex flex-col gap-y-3">
               <div>
-                {rocketDetails?.height.meters}m {rocketDetails?.height.feet}feet
+                {rocketDetails?.height.meters?? "~"}m {rocketDetails?.height.feet?? "~"}feet
               </div>
               <div>
-                {rocketDetails?.diameter.meters}m {rocketDetails?.diameter.feet}
+                {rocketDetails?.diameter.meters?? "~"}m {rocketDetails?.diameter.feet?? "~"}
                 feet
               </div>
               <div>
-                {rocketDetails?.mass.kg}/kg {rocketDetails?.mass.lb}/lb
+                {rocketDetails?.mass.kg?? "~"}/kg {rocketDetails?.mass.lb?? "~"}/lb
               </div>
               <div>
-                {rocketDetails?.payload_weights[0].kg}/kg{" "}
-                {rocketDetails?.payload_weights[0].lb}/lb
+                {rocketDetails?.payload_weights[0].kg?? "~"}/kg{" "}
+                {rocketDetails?.payload_weights[0].lb?? "~"}/lb
               </div>
             </div>
           </div>

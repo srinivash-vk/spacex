@@ -26,9 +26,9 @@ export default function SecondStage(props: _SecondStageProps) {
               <div>Reusability</div>
             </div>
             <div className="flex flex-col gap-y-3">
-              <div>{rocketDetails?.second_stage.engines}</div>
+              <div>{rocketDetails?.second_stage.engines?? "~"}</div>
               <div>{rocketDetails?.second_stage.burn_time_sec ?? "~"}/sec</div>
-              <div>{rocketDetails?.second_stage.fuel_amount_tons}/tons</div>
+              <div>{rocketDetails?.second_stage.fuel_amount_tons?? "~"}/tons</div>
               {rocketDetails?.second_stage.reusable ? (
                 <div>Yes</div>
               ) : (

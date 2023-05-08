@@ -24,8 +24,8 @@ export default function Others(props: _OthersProps) {
               <div>Cost</div>
             </div>
             <div className="flex flex-col gap-y-3">
-              <div>{rocketDetails?.boosters}</div>
-              <div>{rocketDetails?.cost_per_launch} USD</div>
+              <div>{rocketDetails?.boosters?? "~"}</div>
+              <div>{rocketDetails?.cost_per_launch?? "~"} USD</div>
             </div>
           </div>
         </div>
